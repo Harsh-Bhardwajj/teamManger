@@ -10,7 +10,8 @@ export async function connectDB(): Promise<void> {
   await mongoose.connect(uri!);
 }
 
-export * from "./models/User";
-export * from "./models/Project";
-export * from "./models/Task";
-export * from "./models/Activity";
+// .js extension lagana zaroori hai
+export * from "./models/User.js";
+export * from "./models/Project.js";
+export * from "./models/Task.js";
+export * from "./models/Activity.js";
