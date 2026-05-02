@@ -17,6 +17,7 @@
   "engines": {
     "node": "20.x"
   },
+  "engineStrict": true,
   "workspaces": [
     "frontend",
     "backend",
