@@ -3,15 +3,24 @@
   "version": "0.0.0",
   "private": true,
   "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "exports": {
-    ".": "./src/index.ts"
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "development": "./src/index.ts",
+      "default": "./dist/index.js"
+    }
   },
-  "scripts": {},
+  "scripts": {
+    "build": "tsc"
+  },
   "dependencies": {
     "mongoose": "^8.23.1"
   },
   "devDependencies": {
-    "@types/node": "^25.3.3"
+    "@types/node": "^22.0.0",
+    "typescript": "~5.0.0"
   }
 }
-
