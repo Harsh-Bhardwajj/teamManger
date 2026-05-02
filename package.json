@@ -14,9 +14,6 @@
     "typecheck": "npm run typecheck:libs"
   },
   "private": true,
-  "engines": {
-    "node": "20.x"
-  },
   "engineStrict": true,
   "workspaces": [
     "frontend",
