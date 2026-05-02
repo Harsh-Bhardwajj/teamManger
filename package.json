@@ -10,6 +10,7 @@
     "build:backend": "tsc -p backend/tsconfig.json",
     "build": "npm install --include=optional && npm run typecheck && npm run build:frontend && npm run build:backend",
     "start": "node backend/dist/index.js",
+    "typecheck:libs": "tsc --build",
     "typecheck": "npm run typecheck:libs"
   },
   "private": true,
